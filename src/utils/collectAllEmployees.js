@@ -1,11 +1,13 @@
 const inquirer = require("inquirer");
 
 const createManager = require("./createManager")
-let employees = []
+const createEngineer = require("./createEngineer")
 
-const chooseHowToProgress = async () => {
+const chooseHowToProgress = async (employees) => {
   let progressOptions = {}
-  if (employees.length >2) {
+  console.log(employees.length)
+
+  if (employees.length < 2) {
     progressOptions = 
     {
       type: "list",
@@ -51,22 +53,24 @@ const chooseHowToProgress = async () => {
 }
 
 const collectAllEmployees = async () => {
+  let employees = []
+
   const manager = await createManager()
   employees.push(manager);
-  console.log(employees)
 
   let inProgress = true;
 
   while (inProgress) {
-    const nextStep = await chooseHowToProgress();
+    const nextStep = await chooseHowToProgress(employees);
 
     if (nextStep === "Exit") {
       inProgress = false;
 
     } else {
       if (nextStep === "Engineer") {
-        console.log("engineer")
-
+        const engineer = await createEngineer()
+        employees.push(engineer)
+        console.log(employees)
       }
 
       if (nextStep === "Intern") {

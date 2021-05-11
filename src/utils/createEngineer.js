@@ -14,9 +14,9 @@ const createEngineer = async () => {
 
   const answers = await getEmployeeInformation(managerQuestions);
 
-  const manager = new Manager(answers);
+  const engineer = new Engineer(answers);
 
-  return manager;
+  return engineer;
 }
 
 module.exports = createEngineer; 
