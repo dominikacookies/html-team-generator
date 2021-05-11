@@ -1,10 +1,15 @@
 const employeeQuestions = require("./employeeQuestions")
 const getEmployeeInformation = require("./getEmployeeInformation")
-const Manager = require("./Manager");
+const Manager = require("../lib/Manager");
 
 const createManager = async () => {
   const role = "Manager"
   const managerQuestions = [
+    {
+      type: "input",
+      message: "What is the name of this Team?",
+      name: "teamName",
+    },
     ...employeeQuestions,
     {
       type: "input",

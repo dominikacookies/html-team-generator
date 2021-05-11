@@ -1,6 +1,6 @@
 const employeeQuestions = require("./employeeQuestions")
 const getEmployeeInformation = require("./getEmployeeInformation")
-const Engineer = require("./Engineer");
+const Engineer = require("../lib/Engineer");
 
 const createEngineer = async () => {
   const engineerQuestions = [
