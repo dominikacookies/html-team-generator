@@ -4,15 +4,15 @@ class Engineer extends Employee {
   constructor({github, ...rest }) {
     super(rest);
 
-    this.github = officeNumber || "TBC"
+    this.github = github || "TBC"
   }
   getGithub () {
-
+    return this.github
   }
 
   getRole () {
-    return "Manager"
+    return "Engineer"
   }
 }
 
-module.exports = Manager
+module.exports = Engineer
