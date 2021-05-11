@@ -1,8 +1,7 @@
-const createManager = require("./utils/createManager")
+const collectAllEmployees = require("./utils/collectAllEmployees")
 
 const init = () => {
-  const manager = createManager()
-  // const employees = generateDirectReports(manager)
+  const employees = collectAllEmployees()
   // const html = generateHtml(employees)
   // createFile(html)
 }
