@@ -14,7 +14,6 @@ const createManager = async () => {
   ];
 
   const answers = await getEmployeeInformation(managerQuestions);
-  answers.role = role
 
   const manager = new Manager(answers);
 
