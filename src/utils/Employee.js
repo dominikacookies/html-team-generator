@@ -7,20 +7,20 @@ class Employee {
     this.id = id || "TBC"
     this.role = role || "Employee"
   }
-
-  getRole () {
-
-  }
   
   getName ()  {
-
+    return this.name
   }
 
   getEmail () {
-
+    return this.email
   }
   getId () {
-  
+    return this.id
+  }
+
+  getRole () {
+    return "Employee"
   }
 }
 
