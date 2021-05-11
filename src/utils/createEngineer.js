@@ -3,7 +3,7 @@ const getEmployeeInformation = require("./getEmployeeInformation")
 const Engineer = require("./Engineer");
 
 const createEngineer = async () => {
-  const managerQuestions = [
+  const engineerQuestions = [
     ...employeeQuestions,
     {
       type: "input",
@@ -12,7 +12,7 @@ const createEngineer = async () => {
     },
   ];
 
-  const answers = await getEmployeeInformation(managerQuestions);
+  const answers = await getEmployeeInformation(engineerQuestions);
 
   const engineer = new Engineer(answers);
 
