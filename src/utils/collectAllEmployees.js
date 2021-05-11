@@ -1,10 +1,10 @@
 const createManager = require("./createManager")
 
-const collectAllEmployees = () => {
+const collectAllEmployees = async () => {
   employees = []
-  const manager = createManager()
-
-
+  const manager = await createManager()
+  employees.push(manager);
+  console.log(employees)
 }
 
 module.exports = collectAllEmployees
