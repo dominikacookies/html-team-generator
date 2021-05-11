@@ -1,4 +1,3 @@
-
 const Employee = require("./Employee");
 
 class Manager extends Employee {
@@ -6,6 +5,13 @@ class Manager extends Employee {
     super(rest);
 
     this.officeNumber = officeNumber || "TBC"
+  }
+  getOfficeNumber () {
+
+  }
+
+  getRole () {
+    return "Manager"
   }
 }
 
