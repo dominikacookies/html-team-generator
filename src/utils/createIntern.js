@@ -7,7 +7,7 @@ const createIntern = async () => {
     ...employeeQuestions,
     {
       type: "input",
-      message: "Which school does the intern attend?",
+      message: "Which school does this person attend?",
       name: "school",
     },
   ];

@@ -1,7 +1,7 @@
 const employeeQuestions = [
   {
     type: "input",
-    message: `what is the employee's name?`,
+    message: `What is the employee's name?`,
     name: "name",
   },
   {
@@ -11,7 +11,7 @@ const employeeQuestions = [
   },
   {
     type: "input",
-    message: `What is the employee's ID number?`,
+    message: `What is their ID number?`,
     name: "id",
   },
 ]

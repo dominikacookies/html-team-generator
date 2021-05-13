@@ -10,10 +10,16 @@ const createManager = async () => {
       message: "What is the name of this Team?",
       name: "teamName",
     },
-    ...employeeQuestions,
     {
       type: "input",
-      message: "What is the manager's office number?",
+      message: `what is the manager's name?`,
+      name: "name",
+    },
+    employeeQuestions[1],
+    employeeQuestions[2],
+    {
+      type: "input",
+      message: "What is the their office number?",
       name: "officeNumber",
     },
   ];

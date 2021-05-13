@@ -7,7 +7,7 @@ const createEngineer = async () => {
     ...employeeQuestions,
     {
       type: "input",
-      message: "What is this engineer's Github username?",
+      message: "What is their Github username?",
       name: "github",
     },
   ];
