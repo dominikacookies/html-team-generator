@@ -84,4 +84,4 @@ const collectAllEmployees = async () => {
   return employees
 }
 
-module.exports = {collectAllEmployees, employees}
+module.exports = collectAllEmployees

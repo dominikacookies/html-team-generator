@@ -1,5 +1,3 @@
-const {employees} = require("./collectAllEmployees");
-
 const employeeQuestions = [
   {
     type: "input",
@@ -15,13 +13,6 @@ const employeeQuestions = [
     type: "input",
     message: `What is the employee's ID number?`,
     name: "id",
-    validate: (answer) => {
-      if (answer) {
-        return true
-      } else {
-        return "Please enter a valid ID"
-      }
-    }
   },
 ]
 
