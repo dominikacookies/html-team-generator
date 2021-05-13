@@ -52,7 +52,7 @@ test("getGithub method returns the value of the github key", () => {
   expect(actual.getGithub()).toEqual(answers.github);
 })
 
-test("getId method returns the value of id key", () => {
+test("getRole method returns Engineer", () => {
   expect(actual.getRole()).toEqual("Engineer");
 })
 

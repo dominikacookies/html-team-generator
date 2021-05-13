@@ -55,7 +55,7 @@ test("getOfficeNumber method returns the value of the officeNumber key", () => {
   expect(actual.getOfficeNumber()).toEqual(answers.officeNumber);
 })
 
-test("getId method returns the value of id key", () => {
+test("getRole method returns Manager", () => {
   expect(actual.getRole()).toEqual("Manager");
 })
 
