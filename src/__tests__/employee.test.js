@@ -8,6 +8,10 @@ answers = {
 
 const actual = new Employee(answers);
 
+test("create new instance of Employee", () => {
+  expect(actual).toBeInstanceOf(Employee);
+})
+
   test("attributes the values of passed in object as values to class keys", () => {
     expect(actual.name).toEqual(answers.name);
     expect(actual.email).toEqual(answers.email);
