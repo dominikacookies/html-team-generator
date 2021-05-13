@@ -1,3 +1,5 @@
+const {employees} = require("./collectAllEmployees");
+
 const employeeQuestions = [
   {
     type: "input",
@@ -8,16 +10,18 @@ const employeeQuestions = [
     type: "input",
     message: `What is their email address?`,
     name: "email",
-    validate: function (email) {
-      return /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()\.,;\s@\"]+\.{0,1})+([^<>()\.,;:\s@\"]{2,}|[\d\.]+))$/.test(
-        email
-      );
-    }
   },
   {
     type: "input",
     message: `What is the employee's ID number?`,
     name: "id",
+    validate: (answer) => {
+      if (answer) {
+        return true
+      } else {
+        return "Please enter a valid ID"
+      }
+    }
   },
 ]
 

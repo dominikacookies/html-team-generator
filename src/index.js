@@ -1,4 +1,4 @@
-const collectAllEmployees = require("./utils/collectAllEmployees")
+const {collectAllEmployees} = require("./utils/collectAllEmployees")
 
 const init = async () => {
   const employees = await collectAllEmployees()

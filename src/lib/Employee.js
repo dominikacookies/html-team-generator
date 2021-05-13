@@ -1,7 +1,7 @@
 
 
 class Employee {
-  constructor({name, email, id) {
+  constructor({name, email, id}) {
     this.name = name || "TBC"
     this.email = email || "Not yet set up"
     this.id = id || "TBC"

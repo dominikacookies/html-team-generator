@@ -4,7 +4,9 @@ const createManager = require("./createManager")
 const createEngineer = require("./createEngineer")
 const createIntern = require("./createIntern")
 
-const chooseHowToProgress = async (employees) => {
+let employees = []
+
+const chooseHowToProgress = async () => {
   let progressOptions = {}
   console.log(employees)
 
@@ -54,7 +56,6 @@ const chooseHowToProgress = async (employees) => {
 }
 
 const collectAllEmployees = async () => {
-  let employees = []
 
   const manager = await createManager()
   employees.push(manager);
@@ -62,7 +63,7 @@ const collectAllEmployees = async () => {
   let inProgress = true;
 
   while (inProgress) {
-    const nextStep = await chooseHowToProgress(employees);
+    const nextStep = await chooseHowToProgress();
 
     if (nextStep === "Exit") {
       inProgress = false;
@@ -83,4 +84,4 @@ const collectAllEmployees = async () => {
   return employees
 }
 
-module.exports = collectAllEmployees
+module.exports = {collectAllEmployees, employees}
