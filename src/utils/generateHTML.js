@@ -55,7 +55,7 @@ const createEngineerCard = (engineer) => {
           Email:
           <a href="${engineer.getEmail()}" class="card-link"> ${engineer.getEmail()}</a>
         </li>
-        <li class="list-group-item">School: ${engineer.getSchool()}</li>
+        <li class="list-group-item">Github: ${engineer.getGithub()}</li>
       </ul> 
     </div>
   </div>
