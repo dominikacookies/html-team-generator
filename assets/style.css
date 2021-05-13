@@ -1,0 +1,28 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.teamname {
+  animation: slideinfromleft 1s ease-in;
+}
+.manager {
+  animation: slideinfromleft 1s ease-in;
+}
+
+.directreports-container {
+  animation: slideinfromleft 1s ease-in;
+}
+
+@keyframes slideinfromleft {
+  0% {
+    transform: translateY(-10rem);
+  }
+  70% {
+    transform: translateY(3rem);
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
