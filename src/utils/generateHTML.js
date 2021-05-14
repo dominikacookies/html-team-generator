@@ -33,7 +33,7 @@ const createInternCard = (intern) => {
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
           Email:
-          <a href="${intern.getEmail()}" class="card-link"> ${intern.getEmail()}</a>
+          <a href="mailto:${intern.getEmail()}" class="card-link"> ${intern.getEmail()}</a>
         </li>
         <li class="list-group-item">School: ${intern.getSchool()}</li>
       </ul> 
@@ -53,9 +53,11 @@ const createEngineerCard = (engineer) => {
       <ul class="list-group list-group-flush">
         <li class="list-group-item">
           Email:
-          <a href="${engineer.getEmail()}" class="card-link"> ${engineer.getEmail()}</a>
+          <a href="mailto:${engineer.getEmail()}" class="card-link"> ${engineer.getEmail()}</a>
         </li>
-        <li class="list-group-item">Github: ${engineer.getGithub()}</li>
+        <li class="list-group-item">
+        Github:
+        <a href="https://github.com/${engineer.getGithub()}" ${engineer.getGithub()}</li>
       </ul> 
     </div>
   </div>
