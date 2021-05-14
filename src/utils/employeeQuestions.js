@@ -13,6 +13,13 @@ const employeeQuestions = [
     type: "input",
     message: `What is their ID number?`,
     name: "id",
+    validate: (id) => {
+      if (isNaN(id)) {
+        return 'Please only use numbers to set the employee ID.';
+      } else {
+        return true;
+      }
+    }
   },
 ]
 
