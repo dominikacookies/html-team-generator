@@ -57,7 +57,8 @@ const createEngineerCard = (engineer) => {
         </li>
         <li class="list-group-item">
         Github:
-        <a href="https://github.com/${engineer.getGithub()}" ${engineer.getGithub()}</li>
+        <a href="https://github.com/${engineer.getGithub()}" ${engineer.getGithub()}</a>
+        </li>
       </ul> 
     </div>
   </div>
@@ -92,7 +93,7 @@ const generateHTML = (employees) => {
             <title>${manager.getTeamName()}</title>
       </head>
       <body>
-        <header class="text-center p-4 teamname">
+        <header class="text-center p-4 mt-4 teamname">
           <h1>${manager.getTeamName()}</h1>
         </header>
         <main>

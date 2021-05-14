@@ -4,6 +4,14 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: darkslategray
+}
+
+a:hover {
+  color: #343a40;
+}
+
 .teamname {
   animation: slideinfromleft 1s ease-in;
 }
