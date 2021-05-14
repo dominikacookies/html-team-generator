@@ -21,6 +21,13 @@ const createManager = async () => {
       type: "input",
       message: "What is the their office number?",
       name: "officeNumber",
+      validate: (officeNumber) => {
+        if (isNaN(officeNumber)) {
+          return 'Please enter a valid office number.';
+        } else {
+          return true;
+        }
+      }
     },
   ];
 
