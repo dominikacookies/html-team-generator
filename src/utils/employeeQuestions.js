@@ -8,6 +8,14 @@ const employeeQuestions = [
     type: "input",
     message: `What is their email address?`,
     name: "email",
+    validate: (email) => {
+      emailValid = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(email);
+      if (emailValid === true) {
+        return true
+      } else {
+        return 'Please enter a valid email address.';
+      }
+    }
   },
   {
     type: "input",
