@@ -19,7 +19,7 @@ The application has been built with modular programming top of mind thus, relies
 - once the user has finished adding all of the team members a html file is built. The individual employee cards are built using separate functions, depending on the instance of which class they are.
   
 ## Demo Video
-[Click here to view](.assets/../assets/demo-video.mov)
+[Click here to view](./assets/demo/html-generator-demo.mov)
 
 ## Technologies Used
 - Javascript
