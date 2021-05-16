@@ -8,7 +8,6 @@ let employees = []
 
 const chooseHowToProgress = async () => {
   let progressOptions = {}
-  console.log(employees)
 
   if (employees.length < 2) {
     progressOptions = 
