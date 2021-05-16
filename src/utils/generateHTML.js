@@ -57,7 +57,7 @@ const createEngineerCard = (engineer) => {
         </li>
         <li class="list-group-item">
         Github:
-        <a href="https://github.com/${engineer.getGithub()}" ${engineer.getGithub()}</a>
+        <a href="https://github.com/${engineer.getGithub()}"> ${engineer.getGithub()}</a>
         </li>
       </ul> 
     </div>
@@ -66,8 +66,6 @@ const createEngineerCard = (engineer) => {
 }
 
 const generateHTML = (employees) => {
-  console.log(employees)
-
   const manager = employees[0]
   const managerCard = createManagerCard(manager)
 
